@@ -308,3 +308,57 @@ footer p{
   }
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: row;
+  }
+}
+
+/* NAV FIX */
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #12002b;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
