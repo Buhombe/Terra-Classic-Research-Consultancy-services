@@ -249,3 +249,62 @@ footer p{
   .mobile-menu-btn { display: block; }
   .nav-links { display: none; flex-direction: column; }
 }
+
+/* MOBILE NAVIGATION */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #12002b;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav a {
+    margin: 15px 0;
+    display: block;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
