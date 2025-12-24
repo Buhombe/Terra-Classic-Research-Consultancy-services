@@ -54,3 +54,8 @@ if (searchBtn) {
         }
     });
 };
+
+function toggleMenu() {
+  document.querySelector("nav").classList.toggle("show");
+}
+
