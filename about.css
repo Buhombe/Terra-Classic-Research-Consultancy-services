@@ -1,0 +1,136 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* HERO */
+.about-hero {
+  position: relative;
+  height: 45vh;
+  background: url("images/Image.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  max-width: 650px;
+  color: #e5e7eb;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  padding: 80px 0;
+}
+
+.about-block {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* VALUES & TRUST */
+.about-values,
+.about-trust {
+  margin-bottom: 70px;
+}
+
+.about-values h2,
+.about-trust h2 {
+  color: #ff7f50;
+  margin-bottom: 25px;
+}
+
+.about-values ul,
+.about-trust ul {
+  list-style: none;
+}
+
+.about-values li,
+.about-trust li {
+  background: #fef6f3;
+  padding: 18px 22px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding-top: 60px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer h3 {
+  color: #ffb26b;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  color: #cbd5f5;
+}
+
+#copyrights {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  font-size: 0.85rem;
+}
